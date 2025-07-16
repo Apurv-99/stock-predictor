@@ -20,7 +20,7 @@ const Dashboard = () => {
         e.preventDefault();
         setLoading(true)
         try{
-            const response = await axiosInstance.post('v1/predict/', {
+            const response = await axiosInstance.post('/predict/', {
                 ticker: ticker
             });
             console.log(response.data);

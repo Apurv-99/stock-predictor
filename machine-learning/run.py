@@ -10,7 +10,7 @@ from keras.layers import Dense, LSTM, Input
 now = datetime.now()
 start = datetime(now.year - 10, now.month, now.day)
 
-df = yf.download("AAPL", start, now)
+df = yf.download("^RUI", start, now)
 print(df.describe())
 
 
